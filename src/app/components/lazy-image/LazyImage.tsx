@@ -1,6 +1,6 @@
 // Libs
 import { CSSProperties, FC, memo, MouseEvent } from 'react'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { ImageProps } from 'next/dist/client/image'
 
 // Interface
@@ -9,8 +9,6 @@ interface ILazyImage {
   alt: ImageProps['alt']
   width?: ImageProps['width']
   height?: ImageProps['height']
-  objectFit?: ImageProps['objectFit']
-  layout?: ImageProps['layout']
   loading?: ImageProps['loading']
   quality?: ImageProps['quality']
   placeholder?: ImageProps['placeholder']
@@ -25,8 +23,6 @@ const LazyImage: FC<ILazyImage> = ({
   alt,
   width,
   height,
-  objectFit = 'cover',
-  layout = 'intrinsic',
   loading = 'lazy',
   quality = 85,
   placeholder = 'blur',
@@ -57,18 +53,17 @@ const LazyImage: FC<ILazyImage> = ({
     <Image
       width={width}
       height={height}
-      objectFit={objectFit}
       src={src}
       alt={alt}
       quality={quality}
       placeholder={placeholder}
       blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(width, height))}`}
-      layout={layout}
       loading={loading}
       className={className}
-      style={style}
+      style={{ ...style, objectFit: 'cover' }}
       onClick={onClick}
       lazyBoundary={'250px'}
+      layout={'intrinsic'}
     />
   )
 }

@@ -23,6 +23,11 @@
   padding-top: 0;
   height: 0;
   overflow: hidden;
+  z-index: 1;
+
+  &.visible {
+    z-index: -1;
+  }
 
   iframe {
     position: fixed;

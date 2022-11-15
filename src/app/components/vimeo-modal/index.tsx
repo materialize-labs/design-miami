@@ -25,7 +25,6 @@ const customStyles = {
     right: 0,
     bottom: 0,
     backgroundColor: 'black',
-    zIndex: 1000,
   },
   content: {
     top: '0',
@@ -50,12 +49,17 @@ const VimeoModal = ({ open, onClose, vimeoVideoID }: Props) => {
   }, [open])
 
   const onEnd = () => {
-    const iframe = document.querySelector('iframe')
-    if (iframe) {
-      const player = new Player(iframe)
-      if (player) player.exitFullscreen()
+    try {
+      const iframe = document.querySelector('iframe')
+      if (iframe) {
+        const player = new Player(iframe)
+        if (player) player.exitFullscreen()
+      }
+    } catch (e) {
+      console.log(e)
+    } finally {
+      onClose()
     }
-    onClose()
   }
 
   return (
@@ -72,12 +76,12 @@ const VimeoModal = ({ open, onClose, vimeoVideoID }: Props) => {
       </button>
       {!!vimeoVideoID && (
         <Vimeo
-          video={vimeoVideoID}
+          video={vimeoVideoID || ''}
           autoplay
           onEnd={onEnd}
           loop={false}
           playsInline
-          className={open ? `${styles.vimeoVideo} ${styles.visible}` : styles.vimeoVideo}
+          className={styles.vimeoVideo}
         />
       )}
     </ReactModal>

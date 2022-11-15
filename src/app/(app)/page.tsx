@@ -1,7 +1,7 @@
 import { IData } from '@pages/api/home'
 import { Fragment } from 'react'
 import styles from '@app/styles/page.module.scss'
-import Image from 'next/image'
+import { LazyImage } from '@app/components'
 
 async function getHome() {
   const res = await fetch(`${process.env.SITE_URL}/api/home`, {
@@ -22,7 +22,7 @@ const Home = async () => {
         <Fragment key={item.href}>
           {!item.video ? (
             item.image ? (
-              <Image src={item.image} alt={'image'} width={450} height={250} />
+              <LazyImage src={item.image} alt={'image'} width={450} height={250} />
             ) : (
               <div>Not Video and Image yet</div>
             )

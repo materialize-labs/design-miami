@@ -60,8 +60,9 @@ const LazyImage: FC<ILazyImage> = ({
       blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(width, height))}`}
       loading={loading}
       className={className}
-      style={{ ...style, objectFit: 'cover' }}
+      style={style}
       onClick={onClick}
+      objectFit={'cover'}
       lazyBoundary={'250px'}
       layout={'intrinsic'}
     />

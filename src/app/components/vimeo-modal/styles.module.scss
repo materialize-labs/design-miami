@@ -1,5 +1,5 @@
 .closeButton {
-  position: absolute;
+  position: fixed;
   right: 3vw;
   top: 3vh;
   cursor: pointer;
@@ -10,7 +10,7 @@
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  z-index: 1000;
+  z-index: 10000;
 
   &:hover {
     transform: rotate(-180deg);

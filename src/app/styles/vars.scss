@@ -1,0 +1,27 @@
+:root {
+  // Width
+  --min-width: 360px;
+  --max-width: 1440px;
+  // Height
+  --header-height: 75px;
+  // Gaps
+  --gap-very-large: 44px;
+  --gap-large: 30px;
+  --gap-medium: 20px;
+  --gap-small: 5px;
+  // Transition
+  --transition: 0.25s ease-in-out;
+  // Font color
+  --font-primary-color: rgba(0, 0, 0, 0.5);
+  // Body color
+  --body-bg-color-primary: #a8acb8;
+  // Btn color
+  --btn-bg-color-primary: #465c6b;
+  // Border color
+  --border-color-primary: #465c6b;
+  // Box shadow
+  --box-shadow-primary: 0 0 4px #dda75dff;
+  // Scroll
+  --scrollbar-thumb-bg-color: #55575b;
+  --scrollbar-thumb-border-color: #a8acb8;
+}

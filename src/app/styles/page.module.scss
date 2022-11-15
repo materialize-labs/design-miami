@@ -1,3 +1,22 @@
 .container {
-  padding: var(--gap-very-large);
+  padding: 0 var(--gap-very-large);
+
+  & > * {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+}
+
+.section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: var(--gap-very-large);
+  grid-row-gap: var(--gap-large);
+  align-items: center;
+  padding: var(--gap-large) 0 var(--gap-very-large);
+}
+
+.link {
+  font-size: 4.5rem;
 }

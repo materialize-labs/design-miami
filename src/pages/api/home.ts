@@ -1,10 +1,18 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
+import Data from '../../../public/data/home-page.json'
 
-type Data = {
-  name: string
-}
+export type IData = {
+  id: string
+  blogs: {
+    href: string
+    name: string
+    video?: string
+    image?: string
+  }[]
+}[]
 
-export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
-  res.status(200).json({ name: 'John Doe' })
+export default function handler(req: NextApiRequest, res: NextApiResponse<IData>) {
+  const data = Data
+
+  res.status(200).json(data)
 }

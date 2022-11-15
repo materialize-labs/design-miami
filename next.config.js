@@ -8,7 +8,7 @@ const nextConfig = {
   swcMinify: true,
   // Env
   env: {
-    SITE_URL: dev ? 'http://localhost:3000' : 'https://coins-office.vercel.app',
+    SITE_URL: dev ? 'http://localhost:3000' : 'https://design-miami.vercel.app',
   },
   // Icons config
   webpack(config) {

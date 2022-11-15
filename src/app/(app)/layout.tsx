@@ -2,6 +2,7 @@ import '@app/styles/globals.scss'
 import styles from '@app/styles/page.module.scss'
 import { ReactNode } from 'react'
 import { audiFontNormal } from '@app/constants/fonts'
+import { Header } from '@app/components'
 
 // Root layout
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -9,8 +10,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang='en-US' className={audiFontNormal.className}>
       <head />
 
-      <body>
-        <main className={styles.container}>{children}</main>
+      <body className={styles.container}>
+        <Header />
+
+        <main>{children}</main>
       </body>
     </html>
   )

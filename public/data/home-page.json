@@ -1,0 +1,37 @@
+[
+  {
+    "id": "home-page",
+    "blogs": [
+      {
+        "href": "MMI touchless control",
+        "name": "MMI touchless control",
+        "video": "",
+        "image": ""
+      },
+      {
+        "href": "Projection screen GUI",
+        "name": "Projection screen GUI",
+        "video": "",
+        "image": ""
+      },
+      {
+        "href": "Driving mode transitions",
+        "name": "Driving mode transitions",
+        "video": "",
+        "image": ""
+      },
+      {
+        "href": "High class eco system",
+        "name": "High class eco system",
+        "video": "",
+        "image": "/data/images/link-4-img.png"
+      },
+      {
+        "href": "Audi first class lounge",
+        "name": "Audi first class lounge",
+        "video": "",
+        "image": "/data/images/link-5-img.png"
+      }
+    ]
+  }
+]

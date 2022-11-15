@@ -3,8 +3,17 @@
   justify-content: flex-end;
   padding: var(--gap-default) 0;
   box-shadow: var(--box-shadow-primary);
+  min-height: 83px;
 
   @media (max-width: 1400px) {
-    margin-top: 4vh;
+    margin-top: 3vh;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    right: 3vw;
+  }
+
+  @media (max-width: 700px) {
+    margin-top: 1vh;
   }
 }

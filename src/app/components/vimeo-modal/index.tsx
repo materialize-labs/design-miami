@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react'
 import ReactModal from 'react-modal'
 import Vimeo from '@u-wave/react-vimeo'
+import Player from '@vimeo/player'
 
 import { LazyImage } from '@app/components'
 import { CloseImg } from '@app/constants/images'
@@ -48,7 +49,14 @@ const VimeoModal = ({ open, onClose, vimeoVideoID }: Props) => {
     }
   }, [open])
 
-  const onEnd = () => onClose()
+  const onEnd = () => {
+    const iframe = document.querySelector('iframe')
+    if (iframe) {
+      const player = new Player(iframe)
+      if (player) player.exitFullscreen()
+    }
+    onClose()
+  }
 
   return (
     <ReactModal

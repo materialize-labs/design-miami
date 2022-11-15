@@ -7,12 +7,16 @@ import Image from 'next/image'
 import { useRouter, usePathname } from 'next/navigation'
 // Image
 import { LogoImg } from '@app/constants/images'
+import { useIsMobile } from '@app/helpers/hooks'
 
 // Component
 const Header: FC = () => {
   // Router
   const { push } = useRouter()
   const pathname = usePathname()
+
+  const isMobile = useIsMobile()
+
   // Go home
   const goHome = () => pathname !== '/' && push('/')
 
@@ -23,7 +27,7 @@ const Header: FC = () => {
         onClick={goHome}
         src={LogoImg}
         alt={'logo'}
-        width={100}
+        width={isMobile ? 50 : 100}
         style={
           pathname !== '/'
             ? { pointerEvents: 'auto', cursor: 'pointer' }

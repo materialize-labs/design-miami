@@ -1,6 +1,5 @@
 import { IData } from '@pages/api/home'
 import { Fragment } from 'react'
-import Link from 'next/link'
 import styles from '@app/styles/page.module.scss'
 import Image from 'next/image'
 
@@ -31,9 +30,7 @@ const Home = async () => {
             <div>Video</div>
           )}
 
-          <Link href={item.href.replace(/ /gi, '-').toLowerCase()} className={styles.link}>
-            {item.name}
-          </Link>
+          <p className={styles.link}>{item.name}</p>
         </Fragment>
       ))}
     </section>

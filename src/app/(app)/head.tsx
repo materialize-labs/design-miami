@@ -16,6 +16,7 @@ export default function Head() {
       <meta name='description' content={'Antenna - Design Miami'} />
       <meta name='theme-color' content={'#a8acb8'} />
       <meta name='background-color' content={'#a8acb8'} />
+      <meta name='apple-mobile-web-app-capable' content={'yes'} />
 
       <meta property='og:site_name' content={'Antenna - Design Miami'} />
       <meta property='og:title' content={'Antenna - Design Miami'} />

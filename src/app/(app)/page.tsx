@@ -1,6 +1,4 @@
-import { NextPage } from 'next'
-
-const Home: NextPage = () => {
+const Home = () => {
   return <section>Audi</section>
 }
 

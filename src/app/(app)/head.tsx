@@ -2,7 +2,7 @@
 export default function Head() {
   return (
     <>
-      <title>Design miami</title>
+      <title>Antenna - Design Miami</title>
       <link rel='icon' href={`${process.env.SITE_URL}/favicon.ico`} />
 
       <meta name='robots' content='index,follow' />
@@ -12,15 +12,15 @@ export default function Head() {
       <meta property='og:type' content='website' />
 
       <meta name='locale' content={'en-US'} />
-      <meta name='keywords' content={'Audi'} />
-      <meta name='description' content={'Buy Audi'} />
+      <meta name='keywords' content={'Audi, Antenna, Design Miami'} />
+      <meta name='description' content={'Antenna - Design Miami'} />
       <meta name='theme-color' content={'#a8acb8'} />
       <meta name='background-color' content={'#a8acb8'} />
 
-      <meta property='og:site_name' content={'Design miami'} />
-      <meta property='og:title' content={'Design miami'} />
+      <meta property='og:site_name' content={'Antenna - Design Miami'} />
+      <meta property='og:title' content={'Antenna - Design Miami'} />
       <meta property='og:locale' content={'en-US'} />
-      <meta property='og:description' content={'Audi'} />
+      <meta property='og:description' content={'Antenna - Design Miami'} />
       <meta property='og:image' content={`${process.env.SITE_URL}/images/logo.png`} />
     </>
   )

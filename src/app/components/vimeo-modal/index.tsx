@@ -62,16 +62,14 @@ const VimeoModal = ({ open, onClose, vimeoVideoID }: Props) => {
       <button onClick={onClose} className={styles.closeButton}>
         <LazyImage src={CloseImg} alt={'close icon'} width={24} height={24} />
       </button>
-      {!!vimeoVideoID && (
-        <Vimeo
-          video={vimeoVideoID}
-          autoplay
-          onEnd={onEnd}
-          loop={false}
-          playsInline
-          className={styles.vimeoVideo}
-        />
-      )}
+      <Vimeo
+        video={vimeoVideoID || ''}
+        autoplay
+        onEnd={onEnd}
+        loop={false}
+        playsInline
+        className={styles.vimeoVideo}
+      />
     </ReactModal>
   )
 }

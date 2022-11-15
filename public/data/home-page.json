@@ -1,36 +1,31 @@
 [
   {
     "id": "home-page",
-    "blogs": [
+    "items": [
       {
-        "href": "MMI touchless control",
-        "name": "MMI touchless control",
-        "video": "",
-        "image": ""
+        "title": "MMI touchless control",
+        "vimeoVideoID": "768174055",
+        "image": "/data/images/mmi-touchless-control.png"
       },
       {
-        "href": "Projection screen GUI",
-        "name": "Projection screen GUI",
-        "video": "",
-        "image": ""
+        "title": "Projection screen GUI",
+        "vimeoVideoID": "768177531",
+        "image": "/data/images/projection-screen-gui.png"
       },
       {
-        "href": "Driving mode transitions",
-        "name": "Driving mode transitions",
-        "video": "",
-        "image": ""
+        "title": "Driving mode transitions",
+        "vimeoVideoID": "768170137",
+        "image": "/data/images/driving-mode-transitions.png"
       },
       {
-        "href": "High class eco system",
-        "name": "High class eco system",
-        "video": "",
-        "image": "/data/images/link-4-img.png"
+        "title": "High class eco system",
+        "vimeoVideoID": "",
+        "image": "/data/images/high-class-eco-system.png"
       },
       {
-        "href": "Audi first class lounge",
-        "name": "Audi first class lounge",
-        "video": "",
-        "image": "/data/images/link-5-img.png"
+        "title": "Audi first class lounge",
+        "vimeoVideoID": "",
+        "image": "/data/images/audi-first-class-lounge.png"
       }
     ]
   }

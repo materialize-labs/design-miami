@@ -5,10 +5,7 @@
   // Height
   --header-height: 75px;
   // Gaps
-  --gap-very-large: 50px;
-  --gap-large: 30px;
-  --gap-medium: 20px;
-  --gap-small: 5px;
+  --gap-default: 24px;
   // Transition
   --transition: 0.25s ease-in-out;
   // Font color
@@ -24,4 +21,6 @@
   // Scroll
   --scrollbar-thumb-bg-color: #55575b;
   --scrollbar-thumb-border-color: #a8acb8;
+
+  --danger-color: red;
 }

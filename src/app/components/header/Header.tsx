@@ -23,7 +23,7 @@ const Header: FC = () => {
         onClick={goHome}
         src={LogoImg}
         alt={'logo'}
-        width={200}
+        width={100}
         style={
           pathname !== '/'
             ? { pointerEvents: 'auto', cursor: 'pointer' }

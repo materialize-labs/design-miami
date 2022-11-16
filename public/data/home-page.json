@@ -10,22 +10,22 @@
       {
         "title": "Projection screen GUI",
         "vimeoVideoID": "768177531",
-        "image": "/data/images/projection-screen-gui.png"
+        "image": "/data/images/projection-screen-gui.png" 
       },
       {
-        "title": "Driving mode transitions",
+        "title": "Driving modes",
         "vimeoVideoID": "768170137",
-        "image": "/data/images/driving-mode-transitions.png"
+        "image": "/data/images/driving-modes.png"
       },
       {
-        "title": "High class eco system",
-        "vimeoVideoID": "",
+        "title": "High-class eco system",
+        "vimeoVideoID": "771372076",
         "image": "/data/images/high-class-eco-system.png"
       },
       {
-        "title": "Audi first class lounge",
-        "vimeoVideoID": "",
-        "image": "/data/images/audi-first-class-lounge.png"
+        "title": "First class lounge",
+        "vimeoVideoID": "771372469",
+        "image": "/data/images/first-class-lounge.png"
       }
     ]
   }

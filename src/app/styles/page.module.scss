@@ -1,3 +1,5 @@
+@import "../styles/breakpoints";
+
 .container {
   padding: 0 var(--gap-default) var(--gap-default);
 
@@ -6,4 +8,20 @@
     max-width: var(--max-width);
     margin: 0 auto;
   }
+}
+
+.section {
+  padding-bottom: 50px;
+
+  @include tablet {
+    padding-bottom: 70px;
+  }
+}
+
+.more {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-top: 25px;
 }

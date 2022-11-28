@@ -1,5 +1,8 @@
 .closeButton {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   right: 3vw;
   top: 3vh;
   cursor: pointer;

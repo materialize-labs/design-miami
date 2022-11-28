@@ -8,6 +8,7 @@ export interface IData {
     vimeoVideoID?: string
     image: string
   }[]
+  qr: string
 }
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<IData[]>) {

@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints";
+
 .header {
   display: flex;
   justify-content: flex-end;
@@ -15,5 +17,15 @@
 
   @media (max-width: 700px) {
    top: 1vh;
+  }
+
+  &__logo {
+    width: 50px;
+    height: 17px;
+
+    @include laptop{
+      width: 100px;
+      height: 37px;
+    }
   }
 }

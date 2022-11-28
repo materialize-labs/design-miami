@@ -1,6 +1,6 @@
 import { IData } from '@pages/api/home'
 import styles from '@app/styles/page.module.scss'
-import VideoItems from '../components/video-items'
+import { More, VideoItems } from '@app/components'
 
 async function getHome() {
   const res = await fetch(`${process.env.SITE_URL}/api/home`, {
@@ -18,6 +18,10 @@ const Home = async () => {
   return (
     <section className={styles.section} id='modal-parent'>
       {data?.items?.length && <VideoItems items={data.items} />}
+
+      <div className={styles.more}>
+        <More img={data.qr} />
+      </div>
     </section>
   )
 }

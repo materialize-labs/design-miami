@@ -10,7 +10,7 @@
       {
         "title": "Projection screen GUI",
         "vimeoVideoID": "768177531",
-        "image": "/data/images/projection-screen-gui.png" 
+        "image": "/data/images/projection-screen-gui.png"
       },
       {
         "title": "Driving modes",
@@ -27,6 +27,7 @@
         "vimeoVideoID": "771372469",
         "image": "/data/images/first-class-lounge.png"
       }
-    ]
+    ],
+    "qr": "/data/images/qr.png"
   }
 ]

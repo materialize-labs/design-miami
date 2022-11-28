@@ -10,8 +10,6 @@ import { CloseImg } from '@app/constants/images'
 
 import styles from './styles.module.scss'
 
-ReactModal.setAppElement('#modal-parent')
-
 type Props = {
   open: boolean
   onClose: () => void
@@ -40,6 +38,8 @@ const customStyles = {
 }
 
 const VimeoModal = ({ open, onClose, vimeoVideoID }: Props) => {
+  ReactModal.setAppElement('#modal-parent')
+
   useEffect(() => {
     if (open) {
       document.body.classList.remove('scrollable')

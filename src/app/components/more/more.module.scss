@@ -1,0 +1,51 @@
+@import "../../styles/breakpoints";
+
+.wrapper {
+  display: flex;
+  justify-content: right;
+}
+
+.more {
+  cursor: pointer;
+  outline: none;
+  padding: 5px 10px ;
+  background-color: var(--btn-bg-color-primary);
+  border: 1px solid var(--border-color-primary);
+  border-radius: 10px;
+  font-size: 1.8rem;
+  transition: box-shadow var(--transition);
+
+  @include hover {
+    box-shadow: 0 0 4px var(--border-color-primary);
+  }
+
+  @include tablet {
+    font-size: 2.6rem;
+  }
+}
+
+.qrModal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  transform: translateY(-110%);
+  opacity: 0;
+  transition: transform var(--transition), opacity var(--transition);
+
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &__img {
+    background-color: #fff;
+  }
+}

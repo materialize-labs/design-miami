@@ -30,8 +30,8 @@ const VideoItems = (props: Props) => {
             <LazyImage
               src={image}
               alt={'image'}
-              width={isMobile ? 128 : 256}
-              height={isMobile ? 77 : 144}
+              width={isMobile ? 128 : 225}
+              height={isMobile ? 77 : 118}
             />
             {!vimeoVideoID && <div className={styles.item__fpo}>FPO</div>}
           </div>

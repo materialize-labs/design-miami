@@ -27,7 +27,7 @@ const More: FC<{ img: string }> = ({ img }) => {
   return (
     <>
       <div className={globals.container}>
-        <div className={styles.wrapper}>
+        <div className={`${styles.wrapper} ${modal ? styles.noScroll : ''}`}>
           <button className={styles.more} onClick={handleActiveModal}>
             More
           </button>
